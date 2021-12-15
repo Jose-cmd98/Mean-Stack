@@ -1,1 +1,9 @@
-<p>post-create works!</p>
+<!-- Here will be our text area to write an post -->
+<textarea name="" id="" cols="30" rows="10" [value]="newPost" ></textarea>
+<!-- horizontal line -->
+<hr>
+<!-- default button to save out post -->
+<button type="submit" (click)="onSavePost()">Save Post</button>
+
+<!-- Output content -->
+<p> {{newPost}} </p>
