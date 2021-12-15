@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./post-create.component.scss']
 })
 export class PostCreateComponent implements OnInit {
-
-  newPost = ''
+  enteredValue = '';
+  newPost = 'NO CONTENT YET';
 
   constructor() { }
 
@@ -15,6 +15,6 @@ export class PostCreateComponent implements OnInit {
   }
 
   onSavePost(){
-    this.newPost = 'New post works!';
+    this.newPost = this.enteredValue;
   }
 }
