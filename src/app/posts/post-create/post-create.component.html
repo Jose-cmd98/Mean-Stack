@@ -3,11 +3,14 @@
   <!-- Here will be our text area to write an post -->
   <textarea  matInput rows="10" [(ngModel)]="enteredValue" ></textarea>
 </mat-form-field>
+<!-- default button to save out post -->
+<button mat-raised-button type="submit" color="accent" (click)="onSavePost()">Save Post</button>
 </mat-card>
+
 <!-- horizontal line -->
 <hr>
-<!-- default button to save out post -->
-<button type="submit" (click)="onSavePost()">Save Post</button>
+
+
 
 <!-- Output content -->
 <p> {{newPost}} </p>
