@@ -1,3 +1,4 @@
+import { PostsService } from './posts/posts.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -36,7 +37,7 @@ import {MatExpansionModule} from '@angular/material/expansion';
     MatToolbarModule,
     MatExpansionModule
   ],
-  providers: [],
+  providers: [PostsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
