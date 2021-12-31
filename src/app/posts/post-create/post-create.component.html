@@ -1,11 +1,11 @@
 <mat-card>
   <form (submit)="onAddPost(postForm)" #postForm="ngForm">
     <mat-form-field>
-      <input matInput name="title" type="text" [(ngModel)]="enteredTitle" ngModel/>
+      <input matInput name="title" type="text"  ngModel required/>
     </mat-form-field>
     <mat-form-field>
       <!-- Here will be our text area to write an post -->
-      <textarea matInput rows="10" name="content" [(ngModel)]="enteredContent" ngModel></textarea>
+      <textarea matInput rows="10" name="content"  required ngModel></textarea>
     </mat-form-field>
     <!-- default button to save out post -->
     <button

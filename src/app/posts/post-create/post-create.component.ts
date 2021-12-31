@@ -22,6 +22,7 @@ export class PostCreateComponent implements OnInit {
       title: form.value.title,
       content: form.value.content
     };
+    console.log(post);
     this.postCreated.emit(post);
   }
 }
